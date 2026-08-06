@@ -17,7 +17,7 @@ export class ChatManager {
     try {
       while (true) {
         const userQuestion = (
-          await input({ message: "請輸入你想要知道夜市小吃：" })
+          await input({ message: "你想聊哪間夜市或什麼小吃嗎？" })
         ).trim();
 
         if (userQuestion === "") continue;
